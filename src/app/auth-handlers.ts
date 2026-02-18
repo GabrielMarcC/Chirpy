@@ -12,7 +12,7 @@ import {
   createRefreshToken,
   getRefreshToken,
   updateRefreshToken,
-} from "../db/queries/tokens.js"
+} from "../db/queries/auth.js"
 import { HOUR } from "../constants.js"
 
 type Params = {

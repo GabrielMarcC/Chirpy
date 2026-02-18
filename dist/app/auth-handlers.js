@@ -2,7 +2,7 @@ import { findUserByEmail } from "../db/queries/users.js";
 import { checkPasswordHash, getBearerToken, makeJWT, makeRefreshToken, } from "./auth.js";
 import { BadRequestError, UnauthorizedError } from "./errors.js";
 import { config } from "../config.js";
-import { createRefreshToken, getRefreshToken, updateRefreshToken, } from "../db/queries/tokens.js";
+import { createRefreshToken, getRefreshToken, updateRefreshToken, } from "../db/queries/auth.js";
 import { HOUR } from "../constants.js";
 export const handlerLogin = async (req, res) => {
     const params = req.body;
